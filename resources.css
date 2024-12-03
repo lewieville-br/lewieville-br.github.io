@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to left, grey, rgb(0, 0, 0));
+    background-position: center;
+    flex-wrap: wrap;
+    animation-name: backGlow;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes backGlow {
+    0% { opacity: 0; }
+    50% { opacity: 50; }
+    100% { opacity: 100; }
+}
+
+.mainbar {
+    margin: 10px;
+    border: 5px solid;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px white;
+}
+
+.mainbar:hover {
+    background-color: gray;
+    transition: 1s ease-in-out;
+}
+
+.aboutme, .services, .contact, .faq {
+    position: absolute;
+    top: 3%;
+    cursor: pointer;
+}
+
+.aboutme { left: 35%; }
+.services { left: 45%; }
+.contact { left: 55%; }
+.faq { left: 65%; }
+
+.aboutme:hover, .services:hover, .contact:hover, .faq:hover {
+    box-shadow: 0px 0px 10px white;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.container {
+    position: absolute;
+    left: 21%;
+    top: 25%;
+    bottom: 0;
+    border: 3px solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to left, grey, rgb(208, 208, 208));
+    width: 70%;
+    max-width: 800px;
+}
+
+.container div {
+    display: none;
+}
+
+.aboutText, .serviceText, .contactText, .faqText {
+    background-image: linear-gradient(to left, grey, rgb(208, 208, 208));
+}
+
+.vidsize {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    width: 70%;
+    max-width: 90%;
+    border: 3px white solid;
+    border-radius: 30px;
+    animation-name: myOpacity;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes myOpacity {
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+}
