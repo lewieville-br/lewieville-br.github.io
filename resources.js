@@ -1,31 +1,37 @@
-function showContent(section) {
-    var container = document.getElementsByClassName('container')[0];
-    var sections = container.children;
+function hideAllSections() {
+    var aboutSection = document.getElementsByClassName('aboutText')[0];
+    var serviceSection = document.getElementsByClassName('serviceText')[0];
+    var contactSection = document.getElementsByClassName('contactText')[0];
+    var faqSection = document.getElementsByClassName('faqText')[0];
 
-    var i = 0;
-    while (i < sections.length) {
-        sections[i].style.display = 'none';
-        i++;
-    }
-
-    var targetSection = document.getElementsByClassName(section + 'Text')[0];
-    targetSection.style.display = 'block';
+    aboutSection.style.display = 'none';
+    serviceSection.style.display = 'none';
+    contactSection.style.display = 'none';
+    faqSection.style.display = 'none';
 }
 
 function showAbout() {
-    showContent('about');
+    hideAllSections();
+    var aboutSection = document.getElementsByClassName('aboutText')[0];
+    aboutSection.style.display = 'block';
 }
 
 function showServices() {
-    showContent('service');
+    hideAllSections();
+    var serviceSection = document.getElementsByClassName('serviceText')[0];
+    serviceSection.style.display = 'block';
 }
 
 function showContact() {
-    showContent('contact');
+    hideAllSections();
+    var contactSection = document.getElementsByClassName('contactText')[0];
+    contactSection.style.display = 'block';
 }
 
 function showFAQ() {
-    showContent('faq');
+    hideAllSections();
+    var faqSection = document.getElementsByClassName('faqText')[0];
+    faqSection.style.display = 'block';
 }
 
 var aboutButton = document.getElementsByClassName('aboutme')[0];
@@ -40,4 +46,4 @@ contactButton.onclick = showContact;
 var faqButton = document.getElementsByClassName('faq')[0];
 faqButton.onclick = showFAQ;
 
-showContent('about');
+showAbout();
