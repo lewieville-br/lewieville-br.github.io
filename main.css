@@ -275,25 +275,7 @@ h1::selection{
     color: orangered;
 }
 
-.pagination{
-    text-align: center;
-}
-.pagination a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    display: inline-block;
-}
-.pagination a.active{
-    background-color: rgb(124, 255, 124);
-    font-weight: bold;
-    border-radius: 5px;
-}
-.pagination a:hover:not(.active){
-    background-color: rgb(255, 234, 72);
-    font-weight: bold;
-    border-radius: 5px;
-}
+
 .dropdown {
     cursor: pointer;
     margin-top: 15px;
