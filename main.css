@@ -250,7 +250,7 @@ h1::selection{
 }
 
 .myimg {
-    height: 600px;
+    height: 300px;
     margin-left: 25% ;
     border-radius: 30px;
     cursor: pointer;
